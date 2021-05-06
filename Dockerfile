@@ -1,13 +1,10 @@
-FROM node:14-stretch-slim
+FROM node:10-stretch-slim as base
 
 ENV CONVERSIFI_DOCKER_ENV=true
 
-RUN apt-get update && apt-get install -y curl git python make gcc g++
+RUN apt-get update && apt-get install -y curl git
 
-RUN npm install -g npm
 RUN npm install -g lerna rimraf
-
-RUN mkdir /app
 
 WORKDIR /app
 

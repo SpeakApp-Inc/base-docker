@@ -11,5 +11,3 @@ WORKDIR /app
 
 ENV CONVERSIFI_DOCKER_ENV=true
 ENV NODE_ENV production
-
-CMD "bash -c 'echo INVALID USAGE >&2 ; exit 1'"

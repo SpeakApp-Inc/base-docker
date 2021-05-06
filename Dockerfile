@@ -1,8 +1,11 @@
-FROM node:10-stretch-slim as base
+FROM node:14-stretch-slim
 
-RUN apt-get update && apt-get install -y curl git
+RUN apt-get update && apt-get install -y curl git python make gcc g++
 
+RUN npm install -g npm
 RUN npm install -g lerna rimraf
+
+RUN mkdir /app
 
 WORKDIR /app
 

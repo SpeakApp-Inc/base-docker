@@ -2,7 +2,7 @@
 
 set -ex
 
-img=conversifi/base-node:node-14
+img=conversifi/base-node:latest
 
 docker build -t ${img} .
 docker push ${img}

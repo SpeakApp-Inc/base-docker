@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - 'master'
+      - 'main'
       - 'node-14'
 
 jobs:

@@ -8,6 +8,9 @@ RUN npm install -g lerna rimraf
 # > Node Sass could not find a binding for your current environment: OS X 64-bit with Node.js 14.x
 RUN npm rebuild node-sass
 
+# Fix build proccess
+RUN npm rebuild node-gyp
+
 RUN mkdir /app
 
 WORKDIR /app

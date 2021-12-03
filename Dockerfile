@@ -1,4 +1,4 @@
-FROM node:14-stretch-slim
+FROM node:14-alpine
 
 RUN apt-get update && apt-get install -y curl git python make gcc g++
 

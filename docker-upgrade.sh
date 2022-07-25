@@ -8,7 +8,7 @@ fi
 
 img=conversifi/base-node:latest
 
-docker build -t ${img} .
+docker build --platform linux/amd64 -t ${img} .
 docker push ${img}
 
 echo Finish
